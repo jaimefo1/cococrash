@@ -1,11 +1,16 @@
 class Arista {
-    static arista;
+     arista;
 
     constructor(arista = '') {
         if (arista.length == 0) {
-            arista = new Array([0, 0, 0, 0, 0]);
-        } else {
-            this.arista = arista.split(',');
+            arista = '00000';
         }
+        this.arista = arista.split('');
+    }
+    get arista(){
+        return this.arista;
+    }
+    get espejar(){
+        return (new Arista(this.arista.reverse().join('')));
     }
 }
