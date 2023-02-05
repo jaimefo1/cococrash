@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Arista.js"></script>
+        <script src="Pieza.js"></script>
+    </head>
+    <body>
+        <script>
+            //GENERAMOS UNA PIEZA NARANJA
+        let aristas=new Array(4);
+        aristas[0] = new Arista("01010");
+        aristas[1] = new Arista("00100");
+        aristas[2] = new Arista("00100");
+        aristas[3] = new Arista("00010");
+       aristas[3]=aristas[3].espejar;
+            var pieza = new Pieza(1, 'NARANJA', aristas);
+        </script>
+            
+        <div>TODO write content</div>
+    </body>
+</html>
